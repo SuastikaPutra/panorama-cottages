@@ -1,30 +1,50 @@
 {
     "version": 2,
     "builds": [
-        { "src": "/api/index.php", "use": "vercel-php@0.7.3" },
-        { "src": "/public/**", "use": "@vercel/static" }
+      {
+        "src": "api/index.php",
+        "use": "@vercel-php@0.7.3"
+      },
+      {
+        "src": "public/**",
+        "use": "@vercel/static"
+      }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/api/index.php"
-        },
-        { "src": "/build/(.*)", "dest": "/public/build/" }
+      {
+        "src": "/favicon.ico",
+        "dest": "/public/favicon.ico"
+      },
+      {
+        "src": "/build/(.*)",
+        "dest": "/public/build/$1"
+      },
+      {
+        "src": "/storage/(.*)",
+        "dest": "/public/storage/$1"
+      },
+      {
+        "src": "/assets/(.*)",
+        "dest": "/public/assets/$1"
+      },
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/index.php"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/api/index.php"
+      }
     ],
     "env": {
-        "APP_NAME": "Panorama Cottages",
-        "APP_ENV": "production",
-        "APP_DEBUG": "false",
-        "APP_URL": "https://panorama-cottages.vercel.app",
-        "APP_CONFIG_CACHE": "/tmp/config.php",
-        "APP_EVENTS_CACHE": "/tmp/events.php",
-        "APP_PACKAGES_CACHE": "/tmp/packages.php",
-        "APP_ROUTES_CACHE": "/tmp/routes.php",
-        "APP_SERVICES_CACHE": "/tmp/services.php",
-        "VIEW_COMPILED_PATH": "/tmp",
-        "CACHE_DRIVER": "array",
-        "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "cookie"
-    },
-    "outputDirectory": "public"
-}
+      "APP_ENV": "production",
+      "APP_DEBUG": "false",
+      "APP_URL": "https://panorama-cottages.vercel.app",
+      "APP_KEY": "base64:G9A6+2iucCvi2yw4iqRcFARgQV4ALDhic/igVhzvBRg=",
+      "LOG_CHANNEL": "stderr",
+      "SESSION_DRIVER": "cookie",
+      "CACHE_DRIVER": "array",
+      "VIEW_COMPILED_PATH": "/tmp",
+      "APP_STORAGE_PATH": "/tmp/storage"
+    }
+  }
