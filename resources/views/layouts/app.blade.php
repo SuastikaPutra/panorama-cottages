@@ -16,6 +16,7 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/fontawesome-free-6.7.2-web/css/all.min.css') }}">
 
 </head>
 </body>
@@ -30,6 +31,11 @@
 @include('layouts.header')
 @yield('content')
 @include('layouts.footer')
+
+<!-- Logo WhatsApp -->
+<a href="https://wa.me/6281237208224" class="whatsapp-icon">
+    <img src="{{ asset('assets/img/icon-wa.png') }}" alt="WhatsApp" />
+</a>
 
 <!-- ##### All Javascript Script ##### -->
 <!-- jQuery-2.2.4 js -->

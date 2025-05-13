@@ -50,6 +50,10 @@
   margin: 0;
   padding: 0; }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "FuturaLT-Book";
   font-size: 14px; }
@@ -1553,6 +1557,19 @@ img {
     margin-bottom: 0; }
   .palatin-tabs-content .tab-content h6 {
     font-size: 18px; }
+
+    .whatsapp-icon {
+        position: fixed;
+        bottom: 20px; /* Jarak dari bawah */
+        right: 20px; /* Jarak dari kanan */
+        z-index: 1000; /* Pastikan berada di atas elemen lain */
+    }
+
+    .whatsapp-icon img {
+        width: 60px; /* Ukuran logo */
+        height: 60px; /* Ukuran logo */
+    }
+
 
 /* ====== The End ====== */
 

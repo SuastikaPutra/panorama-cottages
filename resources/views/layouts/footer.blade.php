@@ -1,43 +1,37 @@
- <!-- ##### Footer Area Start ##### -->
- <footer class="footer-area">
-    <div class="container">
-        <div class="row">
-
-            <!-- Footer Widget Area -->
-            <div class="col-12 col-lg-5">
-                <div class="footer-widget-area mt-50">
-                    <a href="#" class="d-block mb-5"><img src="img/core-img/logo.png" alt=""></a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. </p>
+ <footer class="footer-area pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mr-lg-5">
+                    <div class="widget">
+                        <h5 class="text-white">About Us</h5>
+                        <p>Panorama Cottages 1 is one of the lodging businesses that was established in 1980, located at Jalan Sriwijaya No.32, Legian, Kec. Kuta, Badung Regency. This cottage has around 40 cottages.</p>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Footer Widget Area -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="footer-widget-area mt-50">
-                    <h6 class="widget-title mb-5">Find us on the map</h6>
-                    <img src="{{ asset('assets/img/bg-img/footer-map.png') }}" alt="">
+                <div class="col-md-6 col-lg-3 pl-lg-5 mb-3">
+                        <h5 class="text-white">Pages</h5>
+                        <ul>
+                            <li><a href="{{ route('index') }}" class="text-light">Home</a></li>
+                            <li><a href="{{ route('services') }}" class="text-light">Service</a></li>
+                            <li><a href="{{ route('about-us') }}" class="text-light">About Us</a></li>
+                            <li><a href="{{ route('contact') }}" class="text-light">Contact</a></li>
+                        </ul>
                 </div>
-            </div>
-
-            <!-- Footer Widget Area -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="footer-widget-area mt-50">
-                    <h6 class="widget-title mb-5">Subscribe to our newsletter</h6>
-                    <form action="#" method="post" class="subscribe-form">
-                        <input type="email" name="subscribe-email" id="subscribeemail" placeholder="Your E-mail">
-                        <button type="submit">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Copywrite Text -->
-            <div class="col-12">
-                <div class="copywrite-text mt-30">
-                    <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+    
+                <div class="col-md-6 col-lg-4">
+                    <div class="widget">
+                        <h5 class="text-white">Contact</h5>
+                        <ul>
+                            <li class="mb-2">
+                                <a class="text-light" href="mailto:panoramacottages1@yahoo.com"><i class="fa-solid fa-inbox" style="color: #9e0000;"></i><span class="ml-2">panoramacottages1@yahoo.com</span></a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-light" href="https://wa.me/6281237208224"><i class="fa-brands fa-whatsapp" style="color: #04eb00;"></i><span class="ml-2">+62 812-3720-8224 (Ibu Oka)</span></a>
+                            </li>
+                            <li class="mb-2"><i class="fa-solid fa-location-dot" style="color: #c9c5ff;"></i><span class="text-light ml-2">Jl. Sriwijaya No.32, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+
+    </footer>

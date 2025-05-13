@@ -9,12 +9,10 @@
 
                     <!-- Nav brand -->
                     <div class="d-flex justify-content-center">
-                        <a href="index.html" class="nav-brand"><img src="{{ asset('icon.png') }}" alt="" style="width: 50px;border-radius: 20%"><span class="text-white ml-3 d-none d-md-inline">Panorama Cottages</span></a>
+                        <a href="index.html" class="nav-brand"><img src="{{ asset('icon.png') }}" alt="" style="width: 50px;border-radius: 20%"><span class="text-white ml-3 d-none d-md-inline">Panorama Cottages 1</span></a>
                         
                     </div>
                     
-
-
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
                         <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -31,10 +29,11 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li class="{{ request()->routeIs('index') ? 'active' : '' }}"><a href="{{ route('index') }}">Home</a></li>
+                                <li class="{{ request()->routeIs('rooms') ? 'active' : '' }}"><a href="{{ route('rooms') }}">Rooms</a></li>
+                                <li class="{{ request()->routeIs('about-us') ? 'active' : '' }}"><a href="{{ route('about-us') }}">About Us</a></li>
+                                <li class="{{ request()->routeIs('services') ? 'active' : '' }}"><a href="{{ route('services') }}">Services</a></li>
+                                <li class="{{ request()->routeIs('contact') ? 'active' : '' }}"><a href="{{ route('contact') }}">Contact</a></li>
                             </ul>
 
                             <!-- Button -->
